@@ -1,5 +1,7 @@
 # govalidator-report
 
+[![Build Status](https://travis-ci.org/kohkimakimoto/govalidator-report.svg?branch=master)](https://travis-ci.org/kohkimakimoto/govalidator-report)
+
 Thin wrapper of [govalidator](https://github.com/asaskevich/govalidator) to take validation errors.
 
 # Usage
