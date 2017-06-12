@@ -8,7 +8,7 @@ func TestValidateStruct(t *testing.T) {
 		LastName  string
 	}{
 		FirstName: "",
-		LastName: "makimoto",
+		LastName:  "makimoto",
 	}
 
 	r := NewReport()

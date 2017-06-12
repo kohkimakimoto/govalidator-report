@@ -1,0 +1,11 @@
+services:
+    - docker
+
+language: go
+
+go:
+  - 1.8
+
+script:
+  - go get github.com/asaskevich/govalidator
+  - go test -cover ./...

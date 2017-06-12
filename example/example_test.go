@@ -1,8 +1,8 @@
 package example
 
 import (
-	"github.com/kohkimakimoto/govalidator-report"
 	"fmt"
+	"github.com/kohkimakimoto/govalidator-report"
 )
 
 type Person struct {
@@ -13,7 +13,7 @@ type Person struct {
 func Example() {
 	person := &Person{
 		FirstName: "",
-		LastName: "bar",
+		LastName:  "bar",
 	}
 
 	r := report.NewReport()
@@ -31,7 +31,7 @@ func Example() {
 	// report validation errors.
 	if r.HasErrors() {
 		for _, err := range r.Errors {
-			fmt.Printf("%s: %s\n",err.Name, err.Err.Error())
+			fmt.Printf("%s: %s\n", err.Name, err.Err.Error())
 		}
 	}
 	// Output: FirstName: Require first name
